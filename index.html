@@ -1,73 +1,21 @@
-// copyright 2025 siberoloji
-// This is a simple jumping dino game using HTML, CSS, and JavaScript.
-// The game features a dino that jumps over a cactus. The score increases as time passes.
-// The game ends when the dino collides with the cactus. The player can restart the game after it ends.
-// The game is designed to be simple and fun, suitable for all ages.
-// The game is played by clicking on the game area or pressing the spacebar to make the dino jump.
-
 <!DOCTYPE html>
+<!-- copyright 2025 siberoloji -->
+<!-- This is a simple jumping dino game using HTML, CSS, and JavaScript. -->
+<!-- The game features a dino that jumps over a cactus. The score increases as time passes. -->
+<!-- The game ends when the dino collides with the cactus. The player can restart the game after it ends. -->
+<!-- The game is designed to be simple and fun, suitable for all ages. -->
+<!-- The game is played by clicking on the game area or pressing the spacebar to make the dino jump. -->
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Jumping Dino Game - A simple and fun jumping game where you control a dino to jump over cacti.">
+    <meta name="keywords" content="Jumping Dino, Game, HTML, CSS, JavaScript">
+    <meta name="author" content="siberoloji">
+    <meta name="theme-color" content="#4CAF50">
     <title>Jumping Dino</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            background-color: #f4f4f4;
-        }
-        #game {
-            width: 600px;
-            height: 200px;
-            border: 2px solid black;
-            margin: auto;
-            position: relative;
-            overflow: hidden;
-            background-color: white;
-        }
-        #dino {
-            width: 50px;
-            height: 50px;
-            background-color: green;
-            position: absolute;
-            bottom: 0;
-            left: 50px;
-        }
-        #cactus {
-            width: 30px;
-            height: 50px;
-            background-color: brown;
-            position: absolute;
-            bottom: 0;
-            left: 580px;
-        }
-        .jump {
-            animation: jump 0.5s linear;
-        }
-        @keyframes jump {
-            0% { bottom: 0; }
-            50% { bottom: 100px; }
-            100% { bottom: 0; }
-        }
-        #score {
-            font-size: 20px;
-            margin: 10px;
-        }
-        #start, #restart {
-            padding: 10px 20px;
-            font-size: 16px;
-            background-color: blue;
-            color: white;
-            border: none;
-            cursor: pointer;
-            margin: 5px;
-        }
-        #restart {
-            display: none;
-            background-color: red;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-6838992550458414"
      crossorigin="anonymous"></script>
 </head>
